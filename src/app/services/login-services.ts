@@ -16,4 +16,7 @@ export class LoginServices {
   login(login:Login): Observable<any> {
     return this.http.post<any>(this.baseUrl + 'login', login, {headers: this.headers });
   }
+  register(login:Login): Observable<any> {
+    return this.http.post<any>(this.baseUrl + 'register', login, {headers: this.headers });
+  }
 }
