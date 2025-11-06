@@ -3,7 +3,7 @@
   <input [(ngModel)]="login.username" type="text" id="username" name="username"><br>
   <label for="password">Password:</label><br>
   <input [(ngModel)]="login.password" type="password" id="password" name="password"><br>
-  <button (click)="verifyLogin()">Sign in</button>
-
+  <button (click)="verifyLogin()">Sign in</button><br>
+  <a [routerLink]="['/register']">Sign up</a>
   {{login.username}} - {{login.password}}
 </form>
