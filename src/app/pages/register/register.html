@@ -1,1 +1,24 @@
-<p>register works!</p>
+
+
+<h2>Registro de usuario</h2>
+
+<form action="...">
+  <div>
+    <label for="usuario">Usuario:</label>
+    <input type='text' placeholder="" name="username" [(ngModel)]="login.username" />
+  </div>
+
+  <div>
+    <label for="gmail">E-mail:</label>
+    <input type='text' placeholder="" name="email" [(ngModel)]="login.email" />
+  </div>
+
+  <div>
+    <label for="contraseña">Contraseña:</label>
+    <input type='password' placeholder=""  name="password" [(ngModel)]="login.password" />
+  </div>
+
+  <button (click) ="register()" >Enviar</button>
+  <button (click)="gobacktologin()">go back to login</button>
+ 
+</form>

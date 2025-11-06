@@ -1,1 +1,14 @@
-<p>machinery works!</p>
+<app-navbar></app-navbar>
+<ul>
+    @for(machinery of machineries; track machinery.id){
+
+    <li><a [routerLink]="['/machinery', machinery.id]">
+        {{machinery.id}}
+        {{machinery.name}}
+        {{machinery.year}}
+        {{machinery.color}}
+        {{machinery.pantone_value}}</a>
+    </li>
+    }
+</ul>
+<app-footer></app-footer>
